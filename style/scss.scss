@@ -1,0 +1,225 @@
+$colorHeader: #0d1321;
+$colorPrincipal: #fae22f;
+$colorPrGradiente: #ede392;
+$colorSecundario: #6e6e6e;
+$colorSeGradiente: #ebebeb;
+$fuentePrincipal: Verdana;
+
+* {
+  text-decoration: none;
+}
+
+a {
+  color: white;
+  font-family: $fuentePrincipal;
+  font-size: 12px;
+}
+
+/* HEADER */
+
+header {
+  background-color: $colorHeader;
+  h1 {
+    font-size: 2em;
+    color: $colorPrincipal;
+    text-align: center;
+    font-family: $fuentePrincipal;
+  }
+  nav {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    .menu__list {
+      ul {
+        list-style-type: none;
+        margin-left: -60px;
+        padding: 0;
+        overflow: hidden;
+        background-color: $colorPrincipal;
+      }
+      li {
+        float: left;
+        a {
+          display: block;
+          color: $colorHeader;
+          font-weight: bold;
+          text-align: center;
+          padding: 12px 18.55px 14px 18.55px;
+          font-size: 14px;
+          &:hover:not(.active) {
+            background-color: $colorPrGradiente;
+          }
+        }
+      }
+      .active {
+        background-color: $colorHeader;
+        color: $colorPrincipal;
+        border-left: 2px solid $colorPrincipal;
+      }
+    }
+  }
+  .usuario {
+    padding-top: 20px;
+    font-size: 12px;
+    * {
+      padding-left: 5px;
+    }
+  }
+  .ayuda {
+    text-align: center;
+    padding-top: 10px;
+    font-size: 12px;
+    * {
+      padding-left: 5px;
+    }
+  }
+  .buscar {
+    margin-top: 20px;
+    :focus {
+      background-color: $colorPrGradiente;
+    }
+    input {
+      background-repeat: no-repeat;
+      padding-left: 10px;
+    }
+  }
+}
+
+/* ACTIVIDADES EXTREMAS */
+
+#actExt {
+  margin-top: 20px;
+  text-align: center;
+  font-family: $fuentePrincipal;
+  figure {
+    img {
+      margin-top: 10px;
+    }
+    .imagen {
+      position: relative;
+      width: 100%;
+      article {
+        position: absolute;
+        top: 15px;
+        right: -20px;
+        color: white;
+        h2 {
+          color: $colorSecundario;
+          font-size: 24px;
+          padding-left: 20px;
+        }
+        p {
+          color: $colorSecundario;
+          font-size: 14px;
+          padding-top: 5px;
+          padding-left: 20px;
+        }
+        input {
+          margin-left: 30px;
+          width: 150px;
+          height: 70px;
+        }
+      }
+    }
+  }
+}
+
+/*   PROMOCIONES    */
+
+section {
+  text-align: center;
+  h2 {
+    margin-top: 140px;
+    font-size: 2em;
+    font-family: $fuentePrincipal;
+    font-weight: normal;
+  }
+  .flecha img {
+    width: 30px;
+    margin-top: 180px;
+  }
+  .articulo {
+    margin-top: 30px;
+    background-color: $colorSeGradiente;
+    img {
+      width: 230px;
+      height: 250px;
+    }
+  }
+  .info {
+    background-color: $colorSeGradiente;
+    font-size: 15px;
+    font-family: $fuentePrincipal;
+    text-align: left;
+    .titulo {
+      background-color: $colorSeGradiente;
+      padding-top: 10px;
+      padding-left: 10px;
+      float: left;
+      width: 135px;
+    }
+    .estrellas {
+      background-color: $colorSeGradiente;
+      float: left;
+      padding-top: 5px;
+      padding-left: 10px;
+      width: 75px;
+      height: 30px;
+      img {
+        width: 20px;
+        height: 20px;
+      }
+    }
+    .precio {
+      padding-top: 20px;
+      padding-left: 10px;
+      width: 170px;
+      float: left;
+    }
+    .anyadir {
+      float: left;
+      padding-top: 15px;
+      width: 50px;
+      img {
+        width: 30px;
+        height: 30px;
+      }
+    }
+  }
+}
+
+/* LINEA GRIS */
+
+.linea {
+  margin-top: 20px;
+  height: 2px;
+  background-color: $colorSecundario;
+}
+
+/*   REDES SOCIALES    */
+
+figure {
+  text-align: center;
+  height: 100px;
+  a img {
+    padding-top: 26px;
+  }
+}
+
+/* PIE DE PAGINA */
+
+footer {
+  height: 42px;
+  background-color: $colorHeader;
+  color: white;
+  text-align: center;
+  ul {
+    list-style: none;
+    padding-top: 17px;
+    padding-left: 11%;
+    font-size: 14px;
+    li a {
+      list-style: none;
+      float: left;
+    }
+  }
+}

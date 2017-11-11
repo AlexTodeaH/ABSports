@@ -1,0 +1,201 @@
+* {
+  text-decoration: none;
+}
+a {
+  color: white;
+  font-family: Verdana;
+  font-size: 12px;
+}
+/* HEADER */
+header {
+  background-color: #0d1321;
+}
+header h1 {
+  font-size: 2em;
+  color: #fae22f;
+  text-align: center;
+  font-family: Verdana;
+}
+header nav {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+header nav .menu__list ul {
+  list-style-type: none;
+  margin-left: -60px;
+  padding: 0;
+  overflow: hidden;
+  background-color: #fae22f;
+}
+header nav .menu__list li {
+  float: left;
+}
+header nav .menu__list li a {
+  display: block;
+  color: #0d1321;
+  font-weight: bold;
+  text-align: center;
+  padding: 12px 18.55px 14px 18.55px;
+  font-size: 14px;
+}
+header nav .menu__list li a:hover:not(.active) {
+  background-color: #ede392;
+}
+header nav .menu__list .active {
+  background-color: #0d1321;
+  color: #fae22f;
+  border-left: 2px solid #fae22f;
+}
+header .usuario {
+  padding-top: 20px;
+  font-size: 12px;
+}
+header .usuario * {
+  padding-left: 5px;
+}
+header .ayuda {
+  text-align: center;
+  padding-top: 10px;
+  font-size: 12px;
+}
+header .ayuda * {
+  padding-left: 5px;
+}
+header .buscar {
+  margin-top: 20px;
+}
+header .buscar :focus {
+  background-color: #ede392;
+}
+header .buscar input {
+  background-repeat: no-repeat;
+  padding-left: 10px;
+}
+/* ACTIVIDADES EXTREMAS */
+#actExt {
+  margin-top: 20px;
+  text-align: center;
+  font-family: Verdana;
+}
+#actExt figure img {
+  margin-top: 10px;
+}
+#actExt figure .imagen {
+  position: relative;
+  width: 100%;
+}
+#actExt figure .imagen article {
+  position: absolute;
+  top: 15px;
+  right: -20px;
+  color: white;
+}
+#actExt figure .imagen article h2 {
+  color: #6e6e6e;
+  font-size: 24px;
+  padding-left: 20px;
+}
+#actExt figure .imagen article p {
+  color: #6e6e6e;
+  font-size: 14px;
+  padding-top: 5px;
+  padding-left: 20px;
+}
+#actExt figure .imagen article input {
+  margin-left: 30px;
+  width: 150px;
+  height: 70px;
+}
+/*   PROMOCIONES    */
+section {
+  text-align: center;
+}
+section h2 {
+  margin-top: 140px;
+  font-size: 2em;
+  font-family: Verdana;
+  font-weight: normal;
+}
+section .flecha img {
+  width: 30px;
+  margin-top: 180px;
+}
+section .articulo {
+  margin-top: 30px;
+  background-color: #ebebeb;
+}
+section .articulo img {
+  width: 230px;
+  height: 250px;
+}
+section .info {
+  background-color: #ebebeb;
+  font-size: 15px;
+  font-family: Verdana;
+  text-align: left;
+}
+section .info .titulo {
+  background-color: #ebebeb;
+  padding-top: 10px;
+  padding-left: 10px;
+  float: left;
+  width: 135px;
+}
+section .info .estrellas {
+  background-color: #ebebeb;
+  float: left;
+  padding-top: 5px;
+  padding-left: 10px;
+  width: 75px;
+  height: 30px;
+}
+section .info .estrellas img {
+  width: 20px;
+  height: 20px;
+}
+section .info .precio {
+  padding-top: 20px;
+  padding-left: 10px;
+  width: 170px;
+  float: left;
+}
+section .info .anyadir {
+  float: left;
+  padding-top: 15px;
+  width: 50px;
+}
+section .info .anyadir img {
+  width: 30px;
+  height: 30px;
+}
+/* LINEA GRIS */
+.linea {
+  margin-top: 20px;
+  height: 2px;
+  background-color: #6e6e6e;
+}
+/*   REDES SOCIALES    */
+figure {
+  text-align: center;
+  height: 100px;
+}
+figure a img {
+  padding-top: 26px;
+}
+/* PIE DE PAGINA */
+footer {
+  height: 42px;
+  background-color: #0d1321;
+  color: white;
+  text-align: center;
+}
+footer ul {
+  list-style: none;
+  padding-top: 17px;
+  padding-left: 11%;
+  font-size: 14px;
+}
+footer ul li a {
+  list-style: none;
+  float: left;
+}
