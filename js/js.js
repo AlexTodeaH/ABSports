@@ -143,7 +143,7 @@ function scroll(){
 	if($(document).scrollTop() < 350){
 		$(".aparecerD").removeClass("come-in-right");
     } 
-    if($(document).scrollTop() < 300){
+    if($(document).scrollTop() < 200){
 		$(".aparecerI").removeClass("come-in-left");
     } 
 
