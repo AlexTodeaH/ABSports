@@ -3,7 +3,7 @@
 }
 a {
   color: white;
-  font-family: Verdana;
+  font-family: 'Dosis',Verdana;
   font-size: 12px;
 }
 /* HEADER */
@@ -11,13 +11,13 @@ header {
   background-color: #0d1321;
 }
 header h1 {
-  font-size: 2em;
+  font-size: 3em;
   color: #fae22f;
   text-align: center;
-  font-family: Verdana;
+  letter-spacing: 1px;
+  font-family: 'Lalezar', Verdana;
 }
 header nav {
-  margin-top: 10px;
   margin-bottom: 10px;
 }
 header nav .menu__list ul {
@@ -31,15 +31,22 @@ header nav .menu__list li {
   float: left;
 }
 header nav .menu__list li a {
+  transition: all .5s linear;
   display: block;
-  color: #0d1321;
   font-weight: bold;
   text-align: center;
-  padding: 12px 18.55px 14px 18.55px;
   font-size: 14px;
+  color: #0d1321;
+  text-decoration: none;
+  letter-spacing: 1.655px;
+  padding: 12px 18.55px 14px 18.55px;
+  background: linear-gradient(to right, #0d1321 40%, #fae22f 100%);
+  background-size: 0px 2px;
+  background-repeat: no-repeat;
+  background-position: left 80%;
 }
 header nav .menu__list li a:hover:not(.active) {
-  background-color: #ede392;
+  background-size: 100% 2px;
 }
 header nav .menu__list .active {
   background-color: #0d1321;
@@ -48,15 +55,23 @@ header nav .menu__list .active {
 }
 header .usuario {
   padding-top: 20px;
-  font-size: 12px;
+  font-family: 'Dosis';
+  letter-spacing: 0.5px;
 }
-header .usuario * {
-  padding-left: 5px;
+header .usuario a {
+  padding-left: 15px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+#logOut {
+  cursor: pointer;
 }
 header .ayuda {
   text-align: center;
   padding-top: 10px;
   font-size: 12px;
+  letter-spacing: 0.6px;
 }
 header .ayuda * {
   padding-left: 5px;
@@ -64,16 +79,14 @@ header .ayuda * {
 header .buscar {
   margin-top: 20px;
 }
-header .buscar :focus {
-  background-color: #ede392;
-}
+
 header .buscar input {
   background-repeat: no-repeat;
   padding-left: 10px;
 }
 /* ACTIVIDADES EXTREMAS */
 #actExt {
-  margin-top: 20px;
+  margin-top: 40px;
   text-align: center;
   font-family: Verdana;
 }
@@ -107,70 +120,104 @@ header .buscar input {
   height: 70px;
 }
 /*   PROMOCIONES    */
+
 section {
   text-align: center;
+  margin-bottom: 80px;
 }
-section h2 {
-  margin-top: 140px;
-  font-size: 2em;
-  font-family: Verdana;
+section h2,.container h2 {
+  margin-top: 160px;
+  margin-bottom: 60px;
+  font-size: 2.2em;
+  font-family: 'Dosis';
   font-weight: normal;
+  letter-spacing: 5px;
 }
-section .flecha img {
+section .flecha {
   width: 30px;
-  margin-top: 180px;
+  height: 40px;
 }
-section .articulo {
-  margin-top: 30px;
-  background-color: #ebebeb;
-}
-section .articulo img {
+section img,.container img {
   width: 230px;
   height: 250px;
+  margin:15px;
 }
-section .info {
-  background-color: #ebebeb;
-  font-size: 15px;
+/* SLIDER */
+
+.mySlides {display:none}
+
+/* BOXEO */
+
+.come-in-left {
+  transform: translateX(-150px);
+  opacity:0;
+  animation: come-in 1.2s ease forwards;
+}
+
+.come-in-left:nth-child(odd) {
+  animation-duration: 1s;
+}
+
+@keyframes come-in {
+  to {
+    transform: translateX(0);
+    opacity:1;
+  }
+}
+
+
+.boxeo h2,.descenso h2 {
+  font-family: 'Dosis';
+  font-size: 2em;
+  letter-spacing: 5px;
+  font-weight: initial;
+  margin-top:90px;
+}
+
+.boxeo p {
+  float:right;
+  letter-spacing: 1.5px;
   font-family: Verdana;
-  text-align: left;
-}
-section .info .titulo {
-  background-color: #ebebeb;
-  padding-top: 10px;
-  padding-left: 10px;
-  float: left;
-  width: 135px;
-}
-section .info .estrellas {
-  background-color: #ebebeb;
-  float: left;
-  padding-top: 5px;
-  padding-left: 10px;
-  width: 75px;
-  height: 30px;
-}
-section .info .estrellas img {
-  width: 20px;
-  height: 20px;
-}
-section .info .precio {
+  font-size: 12px;
   padding-top: 20px;
-  padding-left: 10px;
-  width: 170px;
-  float: left;
 }
-section .info .anyadir {
-  float: left;
-  padding-top: 15px;
-  width: 50px;
+
+.boxeo img {
+  margin-top:30px;
 }
-section .info .anyadir img {
-  width: 30px;
-  height: 30px;
+
+/* DESCENSO */
+
+.come-in-right {
+  transform: translateX(150px);
+  opacity:0;
+  animation: come-in 1.2s ease forwards;
 }
+
+.come-in-right:nth-child(odd) {
+  animation-duration: 1s;
+}
+
+.descenso p {
+  float:left;
+  letter-spacing: 1.5px;
+  font-family: Verdana;
+  font-size: 12px;
+  padding-top: 20px;
+}
+
+.descenso img {
+  margin-top:100px;
+}
+
+.descenso h2 {
+  margin-top:150px;
+}
+
+
 /* LINEA GRIS */
 .linea {
-  margin-top: 20px;
+  margin-top: 60px;
   height: 2px;
   background-color: #6e6e6e;
 }
@@ -180,7 +227,7 @@ figure {
   height: 100px;
 }
 figure a img {
-  padding-top: 26px;
+  padding-top: 50px ;
 }
 /* PIE DE PAGINA */
 footer {
@@ -188,6 +235,7 @@ footer {
   background-color: #0d1321;
   color: white;
   text-align: center;
+  margin-top:40px;
 }
 footer ul {
   list-style: none;
@@ -198,4 +246,29 @@ footer ul {
 footer ul li a {
   list-style: none;
   float: left;
+  font-family: Verdana;
+}
+
+/* COOKIES */
+
+.cookies {
+  height:70px;
+  position:fixed;
+  bottom: 0;
+  background-color: black;
+}
+
+.cookies p {
+  color:white;
+  padding: 10px 10px;
+  font-family: 'Dosis',Verdana;
+}
+
+.cookies p a {
+  color:yellow;
+  font-size:16px;
+}
+
+.cerrar {
+  cursor:pointer;
 }

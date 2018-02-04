@@ -8,6 +8,8 @@
   <link rel="stylesheet" type="text/css" href="style/reset.css"/>
   <link rel="stylesheet" type="text/css" href="style/grid.css"/>
 	<link rel="stylesheet" type="text/css" href="style/css.css"/>
+  <link href='https://fonts.googleapis.com/css?family=Dosis' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Lalezar' rel='stylesheet'>
 
 </head>
 
@@ -27,21 +29,18 @@
  
     <div class="clear"></div>
 
-    <div class="grid_7 alpha usuario">
-      <img src="imagenes/LogoUsuario.jpg" width="30" height="30" alt="Usuario"/>
-      <a href="error.html">Brian Apoteo | </a>
-      <a href="#MiCarrito"><img src="imagenes/Carrito.png" width="20" height="20" alt="Carrito" /></a>
+    <div class="grid_8 alpha usuario">
     </div>
 
-  <nav class="grid_12">
+  <nav class="grid_11">
            
     <div class="menu__list">     	
  		<ul>
-  		<li><a href="#inicio" class="active" >Inicio</a></li>
-  		<li><a href="#catalogo">Catálogo</a></li>
- 		  <li><a href="#novedades">Novedades</a></li>
- 		  <li><a href="#fotos">Fotos</a></li>
- 		  <li><a href="#personalizar">Personalizar</a></li>
+  		<li><a href="#inicio" class="active menu" >Inicio</a></li>
+  		<li><a href="#catalogo" class="menu">Catálogo</a></li>
+ 		  <li><a href="#novedades" class="menu">Novedades</a></li>
+ 		  <li><a href="#fotos" class="menu">Fotos</a></li>
+ 		  <li><a href="#personalizar" class="menu">Personalizar</a></li>
 		</ul>
     </div>
 
@@ -83,80 +82,43 @@
 
   <h2>P R O M O C I O N E S</h2>
 
-<div class="grid_1 flecha">
-  <img src="imagenes/FlechaI.png" alt="Flecha"/>
-</div>
+  <img src="imagenes/FlechaI.png" onclick="plusDivs(-1)" class="flecha" alt="Flecha"/>
 
-<div class="grid_6 articulo">
-  <img src="imagenes/correr.jpg" alt="Articulo"/>
-  <div class="info">
-    <div class="titulo">
-      <p>Zapatillas Runner</p>
-    </div>
-    <div class="estrellas">
-      <img src="imagenes/Estrella.png" alt="Estrella"/>
-      <img src="imagenes/Estrella.png" alt="Estrella"/>
-      <img src="imagenes/Estrella.png" alt="Estrella"/>    
-    </div> 
-    <div class="precio">
-      <p>Precio: 50€
-    </div>
-    <div class="anyadir">
-      <a href="#AñadirProducto"><img src="imagenes/Anyadir.png" alt="Añadir producto"/></a>
-    </div> 
-  </div>
-</div>
+  <img src="imagenes/correr.jpg" class="mySlides" alt="Articulo"/>
 
-<div class="grid_2">&nbsp;</div>
+  <img src="imagenes/futbol.jpg" class="mySlides" alt="Articulo"/>
 
-<div class="grid_6 articulo">
-  <img src="imagenes/futbol.jpg" alt="Articulo"/>
-  <div class="info">
-    <div class="titulo">
-      <p>Zapatillas F7</p>
-    </div>
-    <div class="estrellas">
-      <img src="imagenes/Estrella.png" alt="Estrella"/>
-      <img src="imagenes/Estrella.png" alt="Estrella"/>   
-    </div> 
-    <div class="precio">
-      <p>Precio: 42.30€
-    </div>
-    <div class="anyadir">
-      <a href="#AñadirProducto"><img src="imagenes/Anyadir.png" alt="Añadir producto"/></a>
-    </div> 
-  </div>
-</div>
+  <img src="imagenes/Sneakers.jpg" class="mySlides" alt="Articulo"/>
 
-<div class="grid_2">&nbsp;</div>
+  <img src="imagenes/sudadera.png" class="mySlides" alt="Articulo"/>
 
-<div class="grid_6 articulo alpha">
-  <img src="imagenes/Sneakers.jpg" alt="Articulo"/>
-  <div class="info">
-    <div class="titulo">
-      <p>Sneakers</p>
-    </div>
-    <div class="estrellas">
-      <img src="imagenes/Estrella.png" alt="Estrella"/>
-      <img src="imagenes/Estrella.png" alt="Estrella"/>
-      <img src="imagenes/Estrella.png" alt="Estrella"/>    
-    </div> 
-    <div class="precio">
-      <p>Precio:67.50€</p>
-    </div>
-    <div class="anyadir">
-      <a href="#AñadirProducto"><img src="imagenes/Anyadir.png" alt="Añadir producto"/></a>
-    </div> 
-  </div>
-</div>
+  <img src="imagenes/ropaBasket.jpeg" class="mySlides" alt="Articulo"/>
 
-<div class="grid_1 flecha alpha">
-  <img src="imagenes/FlechaD.png" alt="Flecha"/>
-</div>
+  <img src="imagenes/FlechaD.png" onclick="plusDivs(1)" class="flecha" alt="Flecha"/>
 
 </section>
 
 <!-- LÍNEA GRIS --> 
+
+<div class="clear"></div>
+
+<div class="grid_24 boxeo">
+  <img alt="Boxeo" src="imagenes/Boxeo.jpg" class="grid_12 alpha aparecerI"/>
+  <div class="grid_11 prefix_1 alpha">
+    <h2>NOVEDADES <br> BOXEO</h2>
+    <p>Infórmate de las últimas novedades en boxeo. Hemos actualizado nuestro stock en el que hemos incorporado nuevos accesorios de buenísima calidad.</p>
+  </div>
+</div>
+
+<div class="clear"></div>
+
+<div class="grid_24 descenso">
+  <div class="grid_11 prefix_1 alpha">
+    <h2>DESCENSO <br> BICI</h2>
+    <p>Encuentra las mejores rutas Descenso MTB de Comunidad de Madrid (España). Descargate GPS tracks de Comunidad de Madrid (España). Mira las fotos de la ruta. Comparte tus mejores rutas Descenso MTB por Comunidad de Madrid (España).</p>
+  </div>
+  <img alt="Descenso" src="imagenes/Descenso.jpeg" class="grid_12 alpha aparecerD"/>
+</div>
 
 <div class="clear"></div>
 
@@ -194,6 +156,18 @@
 </footer>  
 
 </div> 
+
+
+<!-- POLITICA COOKIES -->
+
+<div class="cookies">
+<p>Esta web inserta cookies propias para facilitar tu navegación y de terceros derivadas de su uso en nuestra web, de medios sociales, así como para mejorar la usabilidad y temática de la misma con Google Analytics. Los datos personales no son consultados. Si continúas navegando consideramos que aceptas su uso. Puedes cambiar la configuración u obtener más información <a href="http://www.interior.gob.es/politica-de-cookies">aquí.</a>&nbsp;&nbsp;&nbsp;<a class="cerrar">CERRAR</a><p>
+</div>
+
+
+<script type="text/javascript" src="js/countries.js"></script>
+<script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+<script type="text/javascript" src="js/js.js"></script>
 
 
 </body>
