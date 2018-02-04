@@ -140,10 +140,10 @@ function scroll(){
 // Le añadimos dos condiciones que borre la clase de la animación para que cuando vuelva a bajar
 // vuelva a aparecer la animación
 
-	if($(document).scrollTop() < 350){
+	if($(document).scrollTop() < 150){
 		$(".aparecerD").removeClass("come-in-right");
     } 
-    if($(document).scrollTop() < 200){
+    if($(document).scrollTop() < 100){
 		$(".aparecerI").removeClass("come-in-left");
     } 
 
